@@ -14,5 +14,7 @@
 This is a page for ADMIN
 <br>
 <a href="/">Home</a>
+<br>
+<a href="/logout">Log out</a>
 </body>
 </html>

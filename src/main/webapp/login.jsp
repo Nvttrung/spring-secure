@@ -5,6 +5,7 @@
   Time: 8:30 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -20,7 +21,7 @@
     </form>
     <c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
         <p style="color: red";>
-            Your login attempt was not successfull due to:<c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}"/>
+            Your login attempt was not successfull due to: <c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}"/>
         </p>
     </c:if>
 </body>
